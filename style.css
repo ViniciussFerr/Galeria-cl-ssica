@@ -166,9 +166,7 @@ body{
 }
 
 footer{
-    display: flex;
     background-color: black;
     color: white;
-    text-align: center;
-    justify-content: center;
+    text-align:center;
 }
