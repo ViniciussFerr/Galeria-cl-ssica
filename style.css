@@ -1,0 +1,166 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right top, rgb(0, 0, 0), rgb(1, 1, 39), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: 100%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass_artistas{
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.37);
+    padding: 2vw;
+    width: 25vw;
+    height: 20vw;
+    color: white;
+    margin: 5vw;
+    font-size: 0.9vw;
+}
+
+.glass{
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.37);
+    padding: 2vw;
+    width: 25vw;
+    height: 20vw;
+    color: white;
+    margin-left: 5vw;
+    font-size: 0.9vw;
+}
+
+.gv{
+    text-align: center;
+    margin: auto;
+    color: white;
+    padding-top: 1vw;
+    width: 41vw;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30vw;
+}
+
+.gv h1{
+    font-size: 2vw;
+    margin: 2vw;
+}
+
+.artistas{
+    color: white;
+    margin: auto;
+    font-size: 0.8vw;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    text-align: center;
+    /* border: solid red; */
+}
+.cabecalho{
+    margin-top: 1.5vw;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#cabecalho1{
+    align-items: center;
+}
+.cabecalho a {
+    color: white;
+    text-decoration: none; 
+    padding: 2vw; 
+    text-transform: uppercase;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.cabecalho a:hover{
+    text-shadow: 3px 3px 10px white;
+}
+
+.imagens {
+    margin: 5vw;
+    width: 36vw;
+}
+
+.artistas img{
+    width: 19vw;
+}
+
+#artistas_galeria {
+    width: 41vw;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.pinturas{
+    width: 27vw;
+    margin: 4vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.pinturas img{
+    width: 27vw;
+}
+
+.containerP{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.texto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8vw;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.pinturas:hover .texto{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.pinturas:hover img{
+    transition: all 0.5s;
+    transform:scale(1.4);
+}
